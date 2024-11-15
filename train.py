@@ -222,4 +222,4 @@ print("Mean Backward time: {:4f}s".format(np.mean(backward_time)))
 # todo 结束时间
 end_time = time.time()
 with open('train_used_time_{}_{}.txt'.format(args.dataset, args.gpu),'a') as file:
-    file.write("used_time:{}".format((end_time - start_time)))
+    file.write("used_time:{}s\n".format((end_time - start_time)))
